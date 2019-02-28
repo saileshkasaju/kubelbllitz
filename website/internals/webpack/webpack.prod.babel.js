@@ -93,7 +93,7 @@ module.exports = require('./webpack.base.babel')({
     // assets manipulations and do leak its manipulations to HtmlWebpackPlugin
     new OfflinePlugin({
       relativePaths: false,
-      publicPath: '/kubelblitz/',
+      publicPath: '/',
       appShell: '/',
 
       // No need to cache .htaccess. See http://mxs.is/googmp,
@@ -121,9 +121,9 @@ module.exports = require('./webpack.base.babel')({
     }),
 
     new WebpackPwaManifest({
-      name: 'React Boilerplate',
-      short_name: 'React BP',
-      description: 'My React Boilerplate-based project!',
+      name: 'Kugelblitz',
+      short_name: 'Kblitz',
+      description: 'My Kugelblitz-based project!',
       background_color: '#fafafa',
       theme_color: '#b1624d',
       inject: true,
